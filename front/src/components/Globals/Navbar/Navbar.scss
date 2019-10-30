@@ -1,0 +1,12 @@
+#Navbar {
+  background-color: #222a !important;
+  transition: background-color .2s;
+
+  &.transparent {
+    background-color: #000b !important;
+  }
+}
+
+.paper-dropdown {
+  width: 94.71vw;
+}

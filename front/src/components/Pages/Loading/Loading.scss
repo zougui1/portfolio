@@ -1,0 +1,12 @@
+.Loading {
+  margin-top: -80px;
+}
+
+.page-loader {
+  z-index: 9999;
+  background-color: #48657c !important;
+
+  .bar {
+    background-color: #90caf9 !important;
+  }
+}

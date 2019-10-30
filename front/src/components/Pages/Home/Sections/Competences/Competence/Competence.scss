@@ -1,0 +1,9 @@
+.logo {
+  width: 150px;
+  height: 160px;
+  filter: drop-shadow(1px 1px 10px #000a);
+
+  &.\.NET {
+    filter: drop-shadow(1px 1px 10px #0007);
+  }
+}

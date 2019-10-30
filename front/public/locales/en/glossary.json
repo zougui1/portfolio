@@ -1,0 +1,20 @@
+{
+  "presentation": "Presentation",
+  "experiences": "Experiences",
+  "competences": "Competences",
+  "contact": "Contact",
+  "profile": "profile",
+  "address": "address",
+  "phone": "phone",
+  "email": "email",
+  "skills": "skills",
+  "beginner": "beginner",
+  "??": "??",
+  "intermediary": "intermediary",
+  "advanced": "advanced",
+  "expert": "expert",
+  "language-code_to_fullname": {
+    "fr": "french",
+    "en": "english"
+  }
+}

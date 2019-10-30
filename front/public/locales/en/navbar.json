@@ -1,0 +1,6 @@
+{
+  "flag": {
+    "alt": "{{language}} flag",
+    "tooltip": "set language to {{language}}"
+  }
+}

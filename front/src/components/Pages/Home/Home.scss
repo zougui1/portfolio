@@ -1,0 +1,5 @@
+section {
+  &:nth-child(even) {
+    background-color: darken(#2d3748, 5%);
+  }
+}

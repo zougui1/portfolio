@@ -1,0 +1,6 @@
+{
+  "flag": {
+    "alt": "drapeau {{language}}",
+    "tooltip": "définir le language en {{language}}"
+  }
+}

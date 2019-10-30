@@ -1,0 +1,19 @@
+{
+  "presentation": {
+    "subtitle": "Développeur web | React, NodeJs",
+    "img-alt": "Photo de Jérémy Béhérec",
+    "intro": {
+      "1": "Je suis <1>Jérémy Béhérec</1>. J'ai fini une formation intensive en <2>Développement Web</2> et je suis désormais <3>freelance</3>. Je suis à la recherche de missions en tant que <5>développeur web React et/ou Node.js</5>.",
+      "2": "Je suis passionnée de nouvelles technologies et désireux d'apprendre de nouvelles librairies, frameworks et même languages."
+    }
+  },
+  "experiences": {
+    "subtitle": "Mes dernières expériences:",
+    "data-map": {
+      "img-alt": "Vignette du projet"
+    }
+  },
+  "competences": {
+    "subtitle": "Je maitrîse:"
+  }
+}
