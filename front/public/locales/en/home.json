@@ -15,5 +15,31 @@
   },
   "competences": {
     "subtitle": "I master:"
+  },
+  "contact": {
+    "subtitle": "Send me a message",
+    "form": {
+      "name": {
+        "label": "Name",
+        "validations": {
+          "required": "The name is required",
+          "length": "The name must be between {{min}} and {{max}} length"
+        }
+      },
+      "email": {
+        "label": "Email",
+        "validations": {
+          "required": "The email is required",
+          "invalid": "The email is invalid"
+        }
+      },
+      "message": {
+        "label": "Message",
+        "validations": {
+          "required": "The message is required",
+          "length": "The message must be between {{min}} and {{max}} length"
+        }
+      }
+    }
   }
 }

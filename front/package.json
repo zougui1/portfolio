@@ -6,6 +6,7 @@
     "@material-ui/core": "^4.5.1",
     "classnames": "^2.2.6",
     "dynamic-redux": "file:locale_modules/dynamic-redux",
+    "form-validator": "file:locale_modules/form-validator",
     "i18next": "^18.0.0",
     "i18next-browser-languagedetector": "^4.0.0",
     "i18next-xhr-backend": "^3.2.0",

@@ -15,5 +15,31 @@
   },
   "competences": {
     "subtitle": "Je maitrîse:"
+  },
+  "contact": {
+    "subtitle": "Envoyez-moi un message",
+    "form": {
+      "name": {
+        "label": "Name",
+        "validations": {
+          "required": "Le nom est requis",
+          "length": "Le nom doit faire entre {{min}} et {{max}} caractères"
+        }
+      },
+      "email": {
+        "label": "Email",
+        "validations": {
+          "required": "L'email est requis",
+          "invalid": "L'email est invalide"
+        }
+      },
+      "message": {
+        "label": "Message",
+        "validations": {
+          "required": "Le message est requis",
+          "length": "Le message doit faire entre {{min}} et {{max}} caractères"
+        }
+      }
+    }
   }
 }

@@ -12,7 +12,7 @@ const PresentationSectionView = () => (
   <Section
     id="presentation"
     title={<WithTrans i18nKey="glossary:presentation">Presentation</WithTrans>}
-    subtitle={<WithTrans i18nKey="home:presentation:subtitle">Web developer | React, NodeJs</WithTrans>}
+    subtitle={<WithTrans i18nKey="home:presentation.subtitle">Web developer | React, NodeJs</WithTrans>}
   >
     <Grid container justify="space-between" alignItems="center">
       <Grid container item xs={12} md={5} justify="center">
