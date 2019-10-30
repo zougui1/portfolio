@@ -5,11 +5,8 @@ import HomeView from './Home-view';
 
 const mapStateToProps = 'client: language';
 
-class Home extends React.PureComponent {
+const HomeContainer = () => (
+  <HomeView />
+);
 
-  render() {
-    return <HomeView />;
-  }
-}
-
-export default connect(mapStateToProps)(Home);
+export default connect(mapStateToProps)(HomeContainer);
