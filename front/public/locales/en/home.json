@@ -39,6 +39,11 @@
           "required": "The message is required",
           "length": "The message must be between {{min}} and {{max}} length"
         }
+      },
+      "loader": {
+        "loading": "Sending the message...",
+        "success": "The message has been succesfully sent",
+        "error": "An error occured and the message couldn't be sent"
       }
     }
   }

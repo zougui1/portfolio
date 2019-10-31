@@ -39,6 +39,11 @@
           "required": "Le message est requis",
           "length": "Le message doit faire entre {{min}} et {{max}} caractères"
         }
+      },
+      "loader": {
+        "loading": "Envoi du message...",
+        "success": "Le message a été envoyer avec succès",
+        "error": "Une erreur est survenu et le message n'a pas pu être envoyer"
       }
     }
   }

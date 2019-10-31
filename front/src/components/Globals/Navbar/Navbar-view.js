@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import { HashLink as Link } from 'react-router-hash-link';
-import { AppBar, Toolbar, Typography, Grid, Menu, Button, MenuItem } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Grid } from '@material-ui/core';
 
 import NavLinkView from './NavLink';
 import NavbarFlag from './Flag';
@@ -31,10 +31,6 @@ const NavbarView = ({ className }) => (
             <NavLinkView name="competences" />
             <NavLinkView name="contact" />
           </NavbarMenu>
-          {/*<NavLinkView name="presentation" />
-          <NavLinkView name="experiences" />
-          <NavLinkView name="competences" />
-          <NavLinkView name="contact" />*/}
         </Grid>
       </Grid>
     </Toolbar>

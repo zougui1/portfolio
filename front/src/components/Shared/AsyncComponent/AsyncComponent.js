@@ -23,14 +23,14 @@ class AsyncComponent extends React.PureComponent  {
 
     Promise.all(namespaces.map(n => i18n.loadNamespaces(n)))
       .then(() => {
-        setTimeout(() => {
+        //setTimeout(() => {
           if (cachedComponent) {
             this.setPreviousComponent(cachedComponent);
             this.setState({ Component: cachedComponent });
           } else if (!Component) {
             moduleProvider().then(this.componentSetter);
           }
-        }, 1000);
+        //}, 0);
       })
       .catch(err => {
         throw new Error(`A namespace couldn't be loaded. It is likely the file doesn't exists.\nNamespaces: ${namespaces.join(', ')} \n${err}`);

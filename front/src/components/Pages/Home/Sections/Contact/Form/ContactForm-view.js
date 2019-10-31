@@ -4,7 +4,7 @@ import { Button } from '@material-ui/core';
 import Input from '../../../../../Shared/Input';
 import './Form.scss';
 
-const ContactFormView = ({ name, email, message, onChange, onSubmit, validation }) => (
+const ContactFormView = ({ name, email, message, onChange, onSubmit, validation, Loader }) => (
   <form onSubmit={onSubmit}>
     <Input
       id="name"
@@ -42,6 +42,8 @@ const ContactFormView = ({ name, email, message, onChange, onSubmit, validation 
         Send
       </span>
     </Button>
+
+    <Loader classes={{ loading: 'mt-3' }} />
   </form>
 );
 
