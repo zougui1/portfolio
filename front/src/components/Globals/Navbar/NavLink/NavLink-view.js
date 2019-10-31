@@ -1,7 +1,8 @@
 import React from 'react';
-import { upperFirst } from 'lodash';
-import { Trans, withTranslation } from 'react-i18next';
+import { withTranslation } from 'react-i18next';
 import { HashLink as Link } from 'react-router-hash-link';
+
+import { linkName } from './translations';
 
 const NavLinkView = ({ name }) => (
   <Link
@@ -9,9 +10,7 @@ const NavLinkView = ({ name }) => (
     to={'/#' + name}
     className="mr-5"
   >
-    <Trans i18nKey={'glossary:' + name}>
-      {upperFirst(name)}
-    </Trans>
+    {linkName(name)}
   </Link>
 );
 

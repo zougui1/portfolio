@@ -2,6 +2,7 @@ import React from 'react';
 import { withTranslation } from 'react-i18next';
 
 import './Photo.scss';
+import { imgAlt } from './translations';
 
 const PhotoView = ({ t }) => (
   <div className="photo-wrapper">
@@ -9,7 +10,7 @@ const PhotoView = ({ t }) => (
       style={{ filter: 'brightness(0%)' }}
       className="shadow-lg photo"
       src={require('../../../../../../assets/images/presentation/profile.jpg')}
-      alt={t('home:presentation.img-alt')}
+      alt={imgAlt(t)}
     />
   </div>
 );

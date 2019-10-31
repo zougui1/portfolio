@@ -1,13 +1,15 @@
-import React from 'react';
-
-import WithTrans from '../../../../../Shared/WithTrans';
+import {
+  validationIsEmptyMessage,
+  validationIsEmailMessage,
+  validationIsLengthMessage
+} from './translations';
 
 export const validations = [
   {
     field: 'name',
     method: 'isEmpty',
     validWhen: false,
-    message: <WithTrans i18nKey="home:contact.form.name.validations.required">The name is required</WithTrans>
+    message: validationIsEmptyMessage('name'),
   },
   {
     field: 'name',
@@ -17,25 +19,25 @@ export const validations = [
       max: 80
     }],
     validWhen: true,
-    message: <WithTrans i18nKey="home:contact.form.name.validations.length" values={{ min: 3, max: 80 }}>The name must be between {3} and {80} length</WithTrans>
+    message: validationIsLengthMessage('name', { min: 3, max: 80 }),
   },
   {
     field: 'email',
     method: 'isEmpty',
     validWhen: false,
-    message: <WithTrans i18nKey="home:contact.form.email.validations.required">The email is required</WithTrans>
+    message: validationIsEmptyMessage('email'),
   },
   {
     field: 'email',
     method: 'isEmail',
     validWhen: true,
-    message: <WithTrans i18nKey="home:contact.form.email.validations.invalid">The email is invalid</WithTrans>
+    message: validationIsEmailMessage('email'),
   },
   {
     field: 'message',
     method: 'isEmpty',
     validWhen: false,
-    message: <WithTrans i18nKey="home:contact.form.message.validations.required">The message is required</WithTrans>
+    message: validationIsEmptyMessage('message'),
   },
   {
     field: 'message',
@@ -45,6 +47,6 @@ export const validations = [
       max: 5000
     }],
     validWhen: true,
-    message: <WithTrans i18nKey="home:contact.form.message.validations.length" values={{ min: 10, max: 5000 }}>The message must be between {10} and {5000} length</WithTrans>
+    message: validationIsLengthMessage('message', { min: 10, max: 5000 }),
   },
 ];

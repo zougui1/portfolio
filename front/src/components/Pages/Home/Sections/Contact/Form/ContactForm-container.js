@@ -6,7 +6,7 @@ import ContactFormView from './ContactForm-view';
 import { onInputChange } from './actions';
 import { validations } from './validations';
 import ContactFormSocket from './ContactForm-socket';
-import WithTrans from '../../../../../Shared/WithTrans';
+import { loadingMessage } from './translations';
 
 class ContactFormContainer extends React.PureComponent {
 
@@ -35,11 +35,7 @@ class ContactFormContainer extends React.PureComponent {
     const validation = this.validator.validate(this.state);
 
     if (validation.isValid) {
-      this.loader.setLoader.loading(
-        <WithTrans i18nKey="home:contact.form.loader.loading">
-          Sending the message...
-        </WithTrans>
-      );
+      this.loader.setLoader.loading(loadingMessage());
 
       this.socket.emit('sendEmail')({ email: email, name: name, message: message });
     }

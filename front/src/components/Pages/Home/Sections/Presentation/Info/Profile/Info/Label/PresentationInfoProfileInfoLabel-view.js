@@ -1,10 +1,11 @@
 import React from 'react';
-import { Trans, withTranslation } from 'react-i18next';
+
+import { label } from './translations';
 
 const PresentationInfoProfileInfoLabelView = ({ i18nKey, children }) => (
   <span className="font-semibold capitalize">
-    <Trans i18nKey={i18nKey}>{children}</Trans>:
+    {label(i18nKey, children)}
   </span>
 );
 
-export default withTranslation()(PresentationInfoProfileInfoLabelView);
+export default PresentationInfoProfileInfoLabelView;

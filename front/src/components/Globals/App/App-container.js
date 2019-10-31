@@ -10,9 +10,6 @@ class AppContainer extends React.PureComponent {
   componentDidMount() {
     const { setLanguage } = this.props;
     setLanguage(window.navigator.language);
-
-    window.fr = () => setLanguage('fr');
-    window.en = () => setLanguage('en');
   }
 
   render() {

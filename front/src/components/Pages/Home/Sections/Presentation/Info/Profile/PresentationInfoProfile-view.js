@@ -1,15 +1,15 @@
 import React from 'react';
-import { Trans, withTranslation } from 'react-i18next';
 import { Grid, Typography } from '@material-ui/core';
 
 import PresentationInfoProfileInfoView from './Info/PresentationInfoProfileInfo-view';
 import { PresentationInfoProfileViewData } from './PresentationInfoProfileView-data';
+import { infoProfileTitle } from './translations';
 
 const PresentationInfoProfileView = () => (
   <>
     <Grid item className="pb-3">
       <Typography variant="h6" className="text-center capitalize">
-        <Trans i18nKey="glossary:profile">Profile</Trans>
+        {infoProfileTitle()}
       </Typography>
     </Grid>
 
@@ -24,4 +24,4 @@ const PresentationInfoProfileView = () => (
   </>
 );
 
-export default withTranslation()(PresentationInfoProfileView);
+export default PresentationInfoProfileView;

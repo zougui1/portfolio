@@ -2,13 +2,13 @@ import React from 'react';
 import { Grid, Typography } from '@material-ui/core';
 
 import PresentationInfoSkillsSkillbar from './Skillbar';
-import WithTrans from '../../../../../../Shared/WithTrans';
+import { infoSkillTitle } from './translations';
 
 const PresentationInfoSkillsView = () => (
   <>
     <Grid item className="pb-3">
       <Typography variant="h6" className="text-center capitalize">
-        <WithTrans i18nKey="glossary:skills">Skills</WithTrans>
+        {infoSkillTitle()}
       </Typography>
     </Grid>
 

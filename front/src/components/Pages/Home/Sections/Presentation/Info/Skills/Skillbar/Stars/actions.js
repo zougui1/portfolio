@@ -2,7 +2,7 @@ export const skillToNumber = skill => {
   switch (skill) {
     case 'beginner':
       return 1;
-    case '??':
+    case 'bad':
       return 2;
     case 'intermediary':
       return 3;

@@ -3,16 +3,16 @@ import { Grid } from '@material-ui/core';
 
 import './PresentationSection.scss';
 import Section from '../../../../Shared/Section';
-import WithTrans from '../../../../Shared/WithTrans';
 import Photo from './Photo';
 import PresentationIntro from './Intro';
 import PresentationInfo from './Info';
+import { sectionTitle, sectionSubtitle } from './translations';
 
 const PresentationSectionView = () => (
   <Section
     id="presentation"
-    title={<WithTrans i18nKey="glossary:presentation">Presentation</WithTrans>}
-    subtitle={<WithTrans i18nKey="home:presentation.subtitle">Web developer | React, NodeJs</WithTrans>}
+    title={sectionTitle()}
+    subtitle={sectionSubtitle()}
   >
     <Grid container justify="space-between" alignItems="center">
       <Grid container item xs={12} md={5} justify="center">
