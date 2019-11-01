@@ -9,7 +9,7 @@ let server: http.Server | https.Server;
 let _http: http.Server;
 let _https: https.Server | undefined;
 let options: any = {};
-const port = 6000;
+const port = 8000;
 
 // use of https module with SSL when in production
 // use of http module when not in production

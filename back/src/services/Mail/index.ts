@@ -20,9 +20,6 @@ export class Mail {
       text: this.message,
     };
 
-    console.log('user:', process.env.NODEMAILER_USER)
-    console.log('pass:', process.env.NODEMAILER_PASSWORD)
-
     const transporter = nodeMailer.createTransport({
       service: 'gmail',
       auth: {

@@ -15,16 +15,15 @@ class AsyncComponent extends React.PureComponent  {
 
   componentDidMount() {
     const { Component } = this.state;
-    const { moduleProvider, name, namespaces } = this.props;
+    let { moduleProvider, name, namespaces } = this.props;
 
     const cachedComponent = this.getComponent();
 
-    namespaces.unshift(name.toLowerCase());
+    namespaces = [...namespaces, name.toLowerCase()];
 
     Promise.all(namespaces.map(n => i18n.loadNamespaces(n)))
       .then(() => {
         if (cachedComponent) {
-          this.setPreviousComponent(cachedComponent);
           this.setState({ Component: cachedComponent });
         } else if (!Component) {
           moduleProvider().then(this.componentSetter);

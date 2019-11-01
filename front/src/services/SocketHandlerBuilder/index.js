@@ -92,4 +92,11 @@ export class SocketHandlerBuilder {
 
     return listeners;
   }
+
+  /**
+   * remove all the events
+   */
+  removeAllEvents = () => {
+    this.eventRemovers.forEach(eventRemover => eventRemover());
+  }
 }

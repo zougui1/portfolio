@@ -56,13 +56,13 @@ export class SocketBridge {
    * @param {String} name name of the event
    * @returns {Function} function that will emit the event
    */
-  emit = name => (...args) => {
+  emit = name => data => {
     const event = this.event.events[name];
 
     if (!event) {
       throw new Error(`There is no event called "${name}"`);
     }
 
-    return event.emit(...args);
+    return event.emit(data);
   }
 }

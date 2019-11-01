@@ -29,7 +29,7 @@ i18n
       'fr-FR': ['fr'],
       default: ['en']
     },
-    NS: ['navbar', 'glossary', 'home', 'loading'],
+    NS: ['navbar', 'glossary', 'home', 'loading','metatags'],
     defaultNS: 'home',
     debug: true,
     cache: true,

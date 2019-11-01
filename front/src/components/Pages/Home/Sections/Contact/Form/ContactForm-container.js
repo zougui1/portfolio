@@ -37,7 +37,7 @@ class ContactFormContainer extends React.PureComponent {
     if (validation.isValid) {
       this.loader.setLoader.loading(loadingMessage());
 
-      this.socket.emit('sendEmail')({ email: email, name: name, message: message });
+      this.socket.emit('sendEmail')({ email, name, message });
     }
   }
 

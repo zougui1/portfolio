@@ -29,11 +29,19 @@ export class Listeners {
   }
 
   /**
+   * the base function to create a listener
+   * @param {String} suffix suffix for `eventName`
+   */
+  baseCreator(suffix) {
+    return this.listenerCreator(this.socket, this.eventName + suffix);
+  }
+
+  /**
    * create a success listener
    * @param {Function} callback
    */
   success(callback) {
-    this.listenerCreator(this.socket, this.eventName + 'Success')(callback);
+    this.baseCreator('Success')(callback);
     return this;
   }
 
@@ -42,7 +50,7 @@ export class Listeners {
    * @param {Function} callback
    */
   fail(callback) {
-    this.listenerCreator(this.socket, this.eventName + 'Fail')(callback);
+    this.baseCreator('Fail')(callback);
     return this;
   }
 
