@@ -1,0 +1,22 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Organization",
+  "name": "Jérémy Béhérec",
+  "legalName": "Jérémy Béhérec",
+  "url": "https://jeremy-beherec.com",
+  "areaServed": "France",
+  "email": "jeremy.beherec@gmail.com",
+  "description": "",
+  "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "",
+      "addressLocality": "",
+      "streetAddress": "",
+      "postalCode": "",
+      "addressRegion": ""
+  },
+  "knowsAbout": "",
+  "sameAs": "",
+  "logo": "",
+  "slogan": ""
+}
